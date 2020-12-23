@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.16/dist/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>5Wire</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="../js/playlist.js"></script>
+
+
+    <nav class="uk-navbar-container uk-margin desktop" uk-navbar>
+        <div class="uk-navbar-center">
+            <div class="uk-navbar-center-left">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/account">Account</a></li>
+                    </ul>
+                </div>
+            </div><a class="uk-navbar-item uk-logo" href="index.html"><img src="../images/5wire_logo.png" width="100px"
+                    height="auto"></a>
+            <div class="uk-navbar-center-right">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li><a href="/create">Create Playlist</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<div class="mobile-nav-container mobile">
+    <img class="nav-img" src="../images/5wire_logo.png" width="100px" height="auto"><a href="#offcanvas-slide"
+        class="uk-button uk-button-default menu" uk-toggle>Menu</a>
+
+    <div id="offcanvas-slide" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav uk-nav-default">
+                <a class="uk-navbar-item uk-logo" href="index.html"><img src="../images/5wire_logo.png" width="100px"
+                        height="auto"></a>
+                <li><a href="/">Home</a></li>
+                <li><a href="/account">Account</a></li>
+                <li><a href="/create">Create Playlist</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+    <header id="banner">
+        <div class="uk-container">
+            <h1 id="plTitle"></h1>
+            <h2 id="plCat"></h2>
+            <p id="plDesc"></p>
+        </div>
+    </header>
+    <section class="uk-container">
+        <div class="uk-grid">
+            <div class="uk-column uk-width-1-2@m">
+                <ol id="plSongs"></ol>
+            </div>
+            <div class="uk-column uk-width-1-2@m">
+                <div id="spotifyDiv">
+                    <form id="spotifyForm" class="uk-form-horizontal uk-margin-large">
+                        <div class="uk-margin">
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="type" placeholder="category">
+                                    <option name="track">Track</option>
+                                    <!-- <option name="artist">Artist</option>
+                        <option name="album">Album</option> -->
+                                </select>
+                            </div>
+                            <label class="uk-form-label" for="form-horizontal-text">Song Search</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="search" type="text"
+                                    placeholder="Type in a song you want to add to your playlist." name="un" />
+                                <div>
+                                    <a action="submit" id="searchSpotify" class="uk-button uk-button-default"
+                                        href="#">Search</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="spotResults">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br>
+    <footer>
+        <div class="uk-align-left"><img class="footer-img" src="../images/5wire_logo.png" width="100px" height="auto"></div>
+        <div class="footer-text">Design & Development by Group 5<br> &#xA9; Copyright 2020 All Rights Reserved</div>
+        <br>
+        <div class="footer-text"><a href="/">Home</a> | <a href="/account">Account</a> | <a href="/create">Create Playlist</a></div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.16/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

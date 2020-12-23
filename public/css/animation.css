@@ -1,0 +1,178 @@
+/* ==========  This is the 5wire and login-links animation.  ================ */
+.animation-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    position: relative;
+    top: 16%;
+    max-width: 60%;
+}
+#five {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+    max-height: 456px;
+    position: absolute;
+    animation: slideInLeft;
+    -moz-animation: slideInLeft;
+    -webkit-animation: slideInLeft;
+    animation-duration: 0.75s;
+    -moz-animation-duration: 0.75s;
+    -webkit-animation-duration: 0.75s;
+}
+/* I tried to do a delay with the slide in animation, but I couldn't get the element to hide during the delay
+and remain visible after the animation was complete */
+#wire {
+/*     visibility: hidden; */
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    max-height: 456px;
+    position: absolute;
+    animation: slideInRight;
+    -moz-animation: slideInRight;
+    -webkit-animation: slideInRight;
+    animation-duration: 0.75s;
+    -moz-animation-duration: 0.75s;
+    -webkit-animation-duration: 0.75s;
+/*     animation-delay: 0.75s;
+    -moz-animation-delay: 0.75s;
+    -webkit-animation-delay: 0.75s;
+    animation-fill-mode: forwards; */
+}
+
+.login-links {
+    opacity: 0;
+    animation: fadeIn;
+    -moz-animation: fadeIn;
+    -webkit-animation: fadeIn;
+    animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+/* ================================================= */
+
+/* ==========  music player animation.  ================ */
+
+.graph{
+    position: relative;
+    float:right;
+}
+.line1{
+    width: 30px;
+    height:60px;
+    position:absolute;
+    background-color:#fff;
+    animation: animate1 1.9s linear infinite;
+    top:200px;
+    left: 60px;
+}
+.line2{
+    width: 30px;
+    height:60px;
+    position:absolute;
+    background-color:#fff;
+    animation: animate2 2.1s linear infinite;
+    top:200px;
+    left: 95px;
+}
+.line3{
+    width: 30px;
+    height:60px;
+    position:absolute;
+    background-color:#fff;
+    animation: animate3 2.3s linear infinite;
+    top:200px;
+    left: 130px;
+}
+.line4{
+    width: 30px;
+    height:60px;
+    position:absolute;
+    background-color:#fff;
+    animation: animate4 2.3s linear infinite;
+    top:200px;
+    left: 165px;
+}
+.line5{
+    width: 30px;
+    height:60px;
+    position:absolute;
+    background-color:#fff;
+    animation: animate5 1.7s linear infinite;
+    top:200px;
+    left: 200px;
+}
+.line6{
+    width: 30px;
+    height:60px;
+    position:absolute;
+    background-color:#fff;
+    animation: animate6 2.0s linear infinite;
+    top:200px;
+    left: 235px;
+}
+.line7{
+    width: 30px;
+    height:60px;
+    position:absolute;
+    background-color:#fff;
+    animation: animate7 1.8s linear infinite;
+    top:200px;
+    left: 270px;
+}
+@keyframes animate1 {
+    50%{
+        background-color: #78d13f;
+        top: 100px;
+        height: 160px;
+    }
+}
+@keyframes animate2 {
+    50%{
+        background-color: #78d13f;
+        top: 50px;
+        height: 210px;
+    }
+}
+@keyframes animate3 {
+    50%{
+        background-color: #78d13f;
+        top: 10px;
+        height: 250px;
+    }
+}
+@keyframes animate4 {
+    50%{
+        background-color: #78d13f;
+        top: 100px;
+        height: 160px;
+    }
+}
+@keyframes animate5 {
+    50%{
+        background-color: #78d13f;
+        top: 50px;
+        height: 210px;
+    }
+}
+@keyframes animate6 {
+    50%{
+        background-color: #78d13f;
+        top: 150px;
+        height: 110px;
+    }
+}
+@keyframes animate7 {
+    50%{
+        background-color: #78d13f;
+        top: 50px;
+        height: 210px;
+    }
+}

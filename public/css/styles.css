@@ -1,0 +1,254 @@
+html{
+    height:100%; 
+    width:100%;
+    background-color: #333;
+}
+body {
+    height:100%; 
+    width:100%;
+    background-color: #333;
+    color: #fff;
+}
+/*========================Original Nav=========================== */
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #000;
+}
+.uk-navbar-nav>li>a {
+    color: #fff;
+    font-family: 'Audiowide', cursive;
+}
+.uk-navbar-nav>li:hover>a, .uk-navbar-nav>li>a.uk-open, .uk-navbar-nav>li>a:focus {
+    color: #78d13f;
+}
+.uk-margin {
+    margin: 0px!important;
+}
+
+/*======================Mobile Friendly Nav======================*/
+.mobile-nav-container{
+    background: #000; 
+}
+.menu{
+background-color: #78d13f;
+    color: #333;
+    border: none;
+    margin: 20px;
+}
+.menu:hover{
+    background-color: #fff;
+}
+
+ .uk-offcanvas-bar .uk-nav-default>li>a{
+     color: #fff;
+     font-family: 'Audiowide', cursive;;
+ }
+ .uk-offcanvas-bar:hover .uk-nav-default>li>a:hover{
+    color:#78d13f;
+}
+.nav-img {
+    margin: 8px 0px 0px 20px;
+}
+@media only screen and (max-width: 420px){
+    .desktop{display: none;}
+    }
+@media only screen and (min-width: 420px){
+     .mobile{display: none;}
+      }
+/*===================================================================*/
+
+.shrug {
+    font-size: 250px;
+}
+@media only screen and (max-width: 770px){
+    .shrug {
+        font-size: 60px;
+    }
+}
+
+#banner {
+    background-image: url("../images/concert.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+#hero {
+    background-image: url("../images/record-shop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative; /* this is imporatnt for the login-link-box to apear in the correct place */
+    margin-bottom: 20px;
+}
+#login-links-box {
+    position: absolute;
+    left: 45%;
+    bottom: 25%;
+    z-index: 15;
+}
+
+#join {
+    background-color: #78d13f;
+    color: #333;
+    border: none;
+    margin: 20px;
+    z-index: 16;
+}
+#play, #pause{
+    background-color: #78d13f;
+    color: #333;
+    border: none;
+    margin-top: 20px;
+}
+
+#login, #juke {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    margin: 20px;
+}
+#juke {
+    margin-left: 4rem;
+}
+h1, h2, h4 {
+    color: #fff;
+    font-family: 'Audiowide', cursive;
+}
+.form {
+    background-image: url("../images/loginbackgroundphoto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1200px;
+}
+.signup-form {
+    background-image: url("../images/Joinbackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1200px;
+}
+.uk-form-label {
+    color: #fff;
+}
+.uk-margin {
+    background-color: #0000005e;
+}
+.uk-form-horizontal .uk-form-label {
+    width: 200px;
+    margin-top: 15px;
+    margin: 32px;
+}
+.uk-form-horizontal .uk-form-controls {
+    margin: 32px;
+}
+.uk-form-horizontal {
+    color: #fff;
+    margin: auto;
+    max-width: 500px;
+}
+
+#forgot {
+ font-style: italic;
+ color: white;
+ text-decoration: none;
+ margin-left: 43px;
+}
+#forgot:hover {
+    color: #78d13f;
+}
+.fit-content{
+    width: fit-content;
+}
+
+.signup-text {
+    color: #78d13f;
+    text-shadow: 4px 4px #262626;
+   padding-left: 20px;
+}
+
+footer {
+    background-color: #000;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    bottom: 0px;
+}
+.footer-text {
+    color: #fff;
+    font-size: 12px;
+}
+.footer-text a {
+    color: #fff;
+    font-size: 12px;
+}
+.footer-text a:hover {
+    color: #78d13f;
+    text-decoration: none;
+}
+.footer-img {
+    margin-top: -8px;
+}
+/* ==========  This is the styling for the playlist.  ================ */
+#plSongs {
+    margin-top: 30px;
+}
+
+.uk-select:not([multiple]):not([size]) {
+    display: none;
+}
+.delSong {
+    float:right;
+    background-color: #fff;
+    color: #333;
+    border: none;
+}
+.add-btn {
+    float:right;
+    background-color:#78d13f;
+    color: #333;
+    border: none;
+}
+album-img {
+    float:right;
+}
+/* ==========  This is the styling for the spotify buttons.  ================ */
+
+#searchSpotify {
+    margin: 30px 0px 30px 0px;
+    background-color: #78d13f;
+    color: #333;
+    border: none;
+}
+#searchSpotify:hover {
+    background-color: #fff;
+}
+
+#createPlaylist {
+    margin: 30px 0px 30px 0px;
+    background-color: #78d13f;
+    color: #333;
+    border: none;
+}
+#createPlaylist:hover {
+    background-color: #fff;
+}
+
+/* ==========  This is the styling for the playlist list on account page.  ================ */
+.uk-card-primary {
+    margin: 10px 0px 20px 0px;
+}
+
+.view-edit {
+    background-color: #fff;
+    color: #333!important;
+    border: none;
+}
+.disclaimer{
+    font-size: 14px;
+}
+#plCat{
+    display:none;
+}

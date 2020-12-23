@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./js/broker.js"></script>
+    <h1>Create a user</h1>
+    <form id="createUser">
+        <input id="userName" name="userName" type="text" placeholder="username">
+        <input id="pw" name="pw" type="password" placeholder="password">
+        <button action="submit">Submit</button>
+    </form>
+    <br>
+    <h1>Validate a login</h1>
+    <form id="login">
+        <input id="un" name="userName2" type="text" placeholder="username">
+        <input id="pw2" name="pw2" type="password" placeholder="password">
+        <button action="submit">Submit</button>
+    </form>
+    <br>
+    <h1>Create a playlist</h1>
+    <form id="createPlaylist">
+        <input id="title" name="title" type="text" placeholder="title">
+        <input id="desc" name="desc" type="text" placeholder="desc">
+        <input id="userId" name="userId" type="text" placeholder="userID">
+        <button action="submit">Submit</button>
+    </form>
+
+    <!-- <h1>Update a playlist</h1> -->
+    <h1>Add a song to a playlist</h1>
+    <form id="addSong">
+        <input id="songTitle" name="title" type="text" placeholder="title">
+        <input id="artist" name="desc" type="text" placeholder="artist">
+        <input id="album" name="userId" type="text" placeholder="album">
+        <input id="genre" name="userId" type="text" placeholder="genre">
+        <input id="playlistId" name="userId" type="number" placeholder="playlistID">
+        <button action="submit">Submit</button>
+    </form>
+
+    <h1>Test Spotify</h1>
+    <form id="spotify">
+        <select id="type">
+            <option name="track">Track</option>
+            <option name="artist">Artist</option>
+            <option name="album">Album</option>
+        </select>
+        <input id="search" name="title" type="text" placeholder="search">
+        <button action="submit">Submit</button>
+    </form>
+
+    <div id="spotResults">
+
+    </div>
+
+    <h1>Queue</h1>
+    <div id="q">
+
+    </div>
+
+    <!-- <h1>Remove a song from a playlist</h1> -->
+</body>
+=======
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.16/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>5Wire</title>
+</head>
+
+<body>
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+        <div class="uk-navbar-center">
+            <div class="uk-navbar-center-left">
+                <div>
+                    <ul class="uk-navbar-nav">
+                    </ul>
+                </div>
+            </div><a class="uk-navbar-item uk-logo" href="index.html"><img src="images/5wire_logo.png" width="100px"
+                    height="auto"></a>
+            <div class="uk-navbar-center-right">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/account">Account</a></li>
+                        <li><a href="/create">Create Playlist</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+
+<div class="graph">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    <div class="line4"></div>
+    <div class="line5"></div>
+    <div class="line6"></div>
+    <div class="line7"></div>
+</div>
+
+
+
+<a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle>Menu</a>
+
+<div id="offcanvas-slide" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+
+        <ul class="uk-nav uk-nav-default">
+            <a class="uk-navbar-item uk-logo" href="index.html"><img src="images/5wire_logo.png" width="100px" height="auto"></a>
+            <li><a href="/">Home</a></li>
+            <li><a href="/account">Account</a></li>
+            <li><a href="/create">Create Playlist</a></li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<footer>
+    <div class="uk-align-left"><img class="footer-img" src="images/5wire_logo.png" width="100px" height="auto"></div>
+    <p>Design & Development by Group 5<br> &#xA9; Copyright 2020 All Rights Reserved</p>
+</footer>
+
+
+
+
+</html>
